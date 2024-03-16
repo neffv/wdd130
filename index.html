@@ -7,6 +7,28 @@
     <meta name="description" content="This page it's of Nefi Quiñonez for the course web fundamentals and the porpouse is practice tu made a better website.">
     <meta name="author" content="Nefi Quiñonez">
     <link rel="stylesheet" href="Styles/Styles.css">
+    <style>
+        /* Aquí va el estilo CSS para superponer el h2 sobre la imagen en el aside */
+        aside {
+            position: relative; /* Establece el posicionamiento relativo en el elemento padre */
+            width: 300px;
+            margin: 20px;
+            border: 1px solid steelblue;
+            padding: 10px;
+            background-color: #f5f5f5;
+            color: #333;
+            text-align: center;
+        }
+
+        aside h2 {
+            position: absolute; /* Establece el posicionamiento absoluto en el elemento hijo */
+            top: 10px; /* Ajusta la posición desde la parte superior */
+            left: 10px; /* Ajusta la posición desde la izquierda */
+            background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente */
+            color: white;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -14,20 +36,28 @@
         <a href="#">Home</a>
         <a href="wwr/">Rafting Site</a>
         <a href="wwr/site-plan-rafting.html">Rafting Site Plan</a>
+        <a href="https://www.linkedin.com/in/nefi-qui%C3%B1onez/" target="_blank">LinkedIn</a>
+        <a href="https://www.facebook.com/nefi.erick/" target="_blank">Facebook</a>
     </nav>
 </header>
 <main>
     <h1>Nefi Quiñonez | WDD 130</h1>
     <img src="images/profile.jpg" alt="Hello, my name is Nefi Quiñonez" width="200">
     <p>I'am from Guayaquil, Ecuador. I enjoy watching movies, reading books and art in general. 
-        I also like to learn languages; right now I'm learning French. I'm  learning a lot of skills about Python and HTML.</p>
+        I also like to learn languages; right now I'm learning French. I'm  learning a lot of skills about Python and HTML.</p>  
+    <ul class="box">
+        <li><a href="https://www.churchofjesuschrist.org/temples/details/paris-france-temple?lang=eng" target="_blank">Paris France Temple</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/temples/details/quito-ecuador-temple?lang=eng" target="_blank">Quito Ecuador Temple</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/temples/details/barranquilla-colombia-temple?lang=eng" target="_blank">Barranquilla Colombia Temple</a></li>  
+    </ul>
 </main>
-</aside>
-    <h2>Ecuador<h2>
+<aside class="box">
+    <h2>Ecuador</h2> <!-- Corrige la etiqueta de apertura -->
     <img src="images/Ecuador.png" alt="Ecuador" width="200">
     <p> 
         Ecuador is a country located in South America, known for its incredible natural diversity. It is home to the Amazon Rainforest, the Andes Mountains, and the Galápagos Islands. The country's capital, Quito, is known for its well-preserved colonial center, while Cuenca is famous for its historic architecture. Ecuador's cuisine is diverse, with dishes like ceviche and llapingachos being popular. The country's culture is a blend of indigenous and Spanish influences, making it a fascinating destination for travelers.</p>
 </aside>
+
 <footer>
     <p>©️2024 ⚡ Nefi Quiñonez ⚡ - Guayaquil, Ecuador.</p>
 </footer>
